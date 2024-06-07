@@ -19,7 +19,6 @@ return new class extends Migration
             $table->decimal('price', total: 6, places: 2);
             $table->text('description');
             $table->string('img')->nullable();
-            $table->string('category');
             $table->boolean('is_discounted')->default(0);
             $table->tinyInteger('discount')->default(0)->unsigned();
             $table->timestamps();

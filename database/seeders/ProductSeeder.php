@@ -21,7 +21,6 @@ class ProductSeeder extends Seeder
             $newProduct->name = $faker->words(3, true);
             $newProduct->price = $faker->randomFloat(2, 5, 80);
             $newProduct->description = $faker->paragraphs(2, true);
-            $newProduct->category = $faker->words(3, true);
             $newProduct->is_discounted = $faker->boolean();
             if($newProduct->is_discounted){
                 $newProduct->discount = $faker->numberBetween(15, 50);
